@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register to the database</title>
+	<style type="text/css">
+		#heading
+		{
+			text-align: center;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</head>
+<body>
+	<h1 id="heading">
+		Register to the website
+	</h1>
+	<div class="container">
+	<form class="form-horizontal" action="InsertDataIntoDatabase.php" method="post">
+		<div class="form-group">
+			<div class="col-sm-1">Login:</div>
+			<input type="text" name="login">
+		</div>
+		<div class="form-group">
+			<div class="col-sm-1">Password:</div>
+			<input type="password" name="password">
+		</div>
+		<div class="form-group">
+			<div class="col-sm-1">Email:</div>
+			<input type="text" name="email">
+		</div>
+		<div class="form-group">
+			<div class="col-sm-11">
+				<button type="submit" class="btn btn-success">Submit</button>
+			</div>
+		</div>
+	</form>
+	</div>
+</body>
+</html>
