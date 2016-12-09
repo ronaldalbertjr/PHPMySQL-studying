@@ -13,4 +13,12 @@
 			echo $row[$itemToSearch];
 		}
 	}
+	else
+	{
+		echo "<script>
+				alert('Registro Inexistente');
+				window.open('index.html');
+				window.close();
+			  </script>";
+	}
 ?>

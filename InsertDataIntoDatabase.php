@@ -15,5 +15,10 @@
 		$conn = mysqli_connect('localhost', 'root', '', 'trabjamv');
 		$query = mysqli_query($conn ,"INSERT INTO user(login, password, email) VALUES ('$login', '$password', '$email')");
 		mysqli_close($conn);
+		echo "<script>
+			  alert('Registrado com sucesso');
+			  window.open('register.html');
+			  window.close();
+			  </script>";
 	}
 ?>
